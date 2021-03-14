@@ -1,9 +1,9 @@
-import { User, UserModel } from 'entity/User';
-import { isAuth } from 'middleware/isAuth';
 import { ObjectId } from 'mongodb';
-import { ObjectIdScalar } from 'schema/object-id.scalar';
 import { Arg, Ctx, Query, Resolver, UseMiddleware } from 'type-graphql';
 
+import { User, UserModel } from '../entity/User';
+import { isAuth } from '../middleware/isAuth';
+import { ObjectIdScalar } from '../schema/object-id.scalar';
 import { MyContext } from '../types/MyContext';
 
 @Resolver(() => User)

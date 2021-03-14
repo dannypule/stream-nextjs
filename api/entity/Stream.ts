@@ -1,9 +1,9 @@
-import { prop as Property, getModelForClass } from "@typegoose/typegoose";
-import { ObjectId } from "mongodb";
-import { Field, ObjectType } from "type-graphql";
-import { User } from "./User";
+import { getModelForClass, prop as Property } from '@typegoose/typegoose';
+import { ObjectId } from 'mongodb';
+import { Field, ObjectType } from 'type-graphql';
 
-import { Ref } from "../types/ref";
+import { Ref } from '../types/_Ref';
+import { User } from './User';
 
 @ObjectType({ description: "Stream embedded post content" })
 export class Stream {
