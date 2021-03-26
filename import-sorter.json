@@ -1,0 +1,34 @@
+{
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
+  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.type": "newLineEachExpressionAfterCountLimitExceptIfOnlyOne",
+  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 120,
+  "importSorter.importStringConfiguration.tabSize": 2,
+  "importSorter.importStringConfiguration.quoteMark": "single",
+  "importSorter.importStringConfiguration.trailingComma": "multiLine",
+  "importSorter.sortConfiguration.customOrderingRules.rules": [
+    {
+      "type": "importMember",
+      "regex": "^$",
+      "orderLevel": 50,
+      "disableSort": true
+    },
+    {
+      "regex": "^(react|react-dom|react-portal)$",
+      "orderLevel": 5,
+      "numberOfEmptyLinesAfterGroup": 0
+    },
+    {
+      "regex": "src/",
+      "orderLevel": 25,
+      "numberOfEmptyLinesAfterGroup": 1
+    },
+    {
+      "regex": "^(design-system/|components/|containers/|store|images/|lib/|i18n/)",
+      "orderLevel": 30
+    },
+    {
+      "regex": "^[.]",
+      "orderLevel": 40
+    }
+  ]
+}
